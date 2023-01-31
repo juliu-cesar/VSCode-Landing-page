@@ -8,19 +8,35 @@ export const CSSReset = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: sans-serif;
-		background-color: ${({theme})=> theme.backgroundBase};
-		color: ${({theme})=> theme.textColorBase};
+		background-color: ${({theme})=> theme.background_base};
+		color: ${({theme})=> theme.text_color};
+    font-family: 'Mukta', sans-serif;
+  }
+  .text_main{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .text_general{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .text_small{
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .icon{
+    /* width: 20px;
+    height: 20px; */
   }
   /* NextJS */
   html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    /* display: block; */
+    /* flex-direction: column; */
+    /* min-height: 100%; */
   }
   body {
-    display: flex;
-    flex: 1;
+    /* display: flex; */
+    /* flex: 1; */
   }
   #__next {
     /* display: flex; */
