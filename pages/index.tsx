@@ -1,4 +1,5 @@
 import Banner from '@/src/Banner'
+import CarouselHome from '@/src/CarouselHome'
 import Header from '@/src/Header'
 import Head from 'next/head'
 import styled from 'styled-components'
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
       <Header isHomePage={false}/>
       <Banner/>
+      <CarouselHome />
     </>
   )
 }

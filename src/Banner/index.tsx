@@ -9,9 +9,15 @@ export default function Banner() {
       <p>de desenvolvimento</p>
       <div>
         <button className="btn_downloadPrincipal">
-          Baixar Visual Studio Code
+          <a href="https://code.visualstudio.com/download">
+            Baixar Visual Studio Code
+          </a>
         </button>
-        <button className="btn_webVersion">Testar versão Web</button>
+        <button className="btn_webVersion">
+          <a href="https://vscode.dev/" target={"_blank"}>
+            Testar versão Web
+          </a>
+        </button>
       </div>
       <img
         src="img/Home/vscode-svg-icon.svg"

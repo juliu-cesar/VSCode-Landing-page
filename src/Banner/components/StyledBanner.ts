@@ -19,13 +19,15 @@ div{
   .btn_downloadPrincipal{
     position: absolute;
     background: linear-gradient(90deg, rgba(0,210,78,0.6091430322128851) 0%, rgba(0,152,255,1) 70%, rgba(0,152,255,1) 100%);
-    color: ${({theme})=> theme.text_color};
     right: 16px;
     top: 30px;
     border: unset;
     width: 198px;
     height: 45px;
     border-radius: 2px;
+    a{
+      color: ${({theme})=> theme.text_color};      
+    }
     :hover, :focus{
       background-color: rgb(0,152,255);      
     }
@@ -33,12 +35,14 @@ div{
   .btn_webVersion{
     position: absolute;
     background-color: unset;
-    color: ${({theme})=> theme.text_color};
     right: 16px;
     top: 90px;
     padding: 10px;
     border: 2px solid ${({theme})=> theme.text_color};
     border-radius: 3px;
+    a{
+      color: ${({theme})=> theme.text_color};      
+    }
     :hover{
       background-color: ${({theme})=> theme.text_color};
       color: ${({theme})=> theme.background_base};
