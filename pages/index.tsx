@@ -16,10 +16,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/img/Home/vscode-svg-icon.svg" />
       </Head>
-      <Header/>
+      <Header isHomePage={true}/>
       <div>
         Hello World.
-        <a href="https://google.com">Teste</a>
       </div>
     </>
   )

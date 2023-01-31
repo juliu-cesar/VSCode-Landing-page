@@ -10,9 +10,16 @@ export const StyledHeader = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;    
     li{
       list-style: none;
       padding: 13px;
+    }
+    .btn_homePage{
+      position: absolute;
+      width: 35px;
+      left: 13px;
+      top: 7px;
     }
     .resources_menu{
       display: flex;
