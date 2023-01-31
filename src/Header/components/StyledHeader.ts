@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
   width: 100vw;
   height: 50px;
   display: block;
- /* nav{
+ nav{
   width: 100%;
   ul{
     display: flex;
@@ -16,8 +16,11 @@ export const StyledHeader = styled.header`
     }
     .resources_menu{
       display: flex;
-      align-items: center;      
+      align-items: center;
+      img{
+        width: 20px;
+      }   
     }
   }
- }  */
+ } 
 `
