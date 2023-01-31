@@ -27,7 +27,7 @@ export const StyledDivCrHome = styled.div`
       left: calc(50% - 1px);
       bottom: -28px;
       margin: 0px;
-      background-color: ${({theme})=> theme.second_color};
+      background-color: ${({ theme }) => theme.second_color};
       display: block;
     }
   }
