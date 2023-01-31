@@ -1,3 +1,4 @@
+import Banner from '@/src/Banner'
 import Header from '@/src/Header'
 import Head from 'next/head'
 import styled from 'styled-components'
@@ -16,10 +17,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/img/Home/vscode-svg-icon.svg" />
       </Head>
-      <Header isHomePage={true}/>
-      <div>
-        Hello World.
-      </div>
+      <Header isHomePage={false}/>
+      <Banner/>
     </>
   )
 }

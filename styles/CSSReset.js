@@ -49,9 +49,5 @@ export const CSSReset = createGlobalStyle`
     text-decoration: none;
     opacity: 1;
     transition: .25s;
-    &:hover,
-    &:focus {
-      opacity: .7;
-    }
   }
 `;
