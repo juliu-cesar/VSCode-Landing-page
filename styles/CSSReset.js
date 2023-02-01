@@ -12,6 +12,9 @@ export const CSSReset = createGlobalStyle`
 		color: ${({theme})=> theme.text_color};
     font-family: 'Mukta', sans-serif;
   }
+  .subtitle{
+    font-size: 17px;
+  }
   .text_main{
     font-size: 15px;
     font-weight: 400;
@@ -21,12 +24,12 @@ export const CSSReset = createGlobalStyle`
     font-weight: 300;
   }
   .text_small{
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 300;
   }
   .icon{
-    /* width: 20px;
-    height: 20px; */
+    width: 20px;
+    height: 20px;
   }
   /* NextJS */
   html {
