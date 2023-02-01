@@ -1,6 +1,7 @@
 import Banner from '@/src/Banner'
 import CarouselHome from '@/src/CarouselHome'
 import DownloadSection from '@/src/DownloadSection'
+import Footer from '@/src/Footer'
 import Header from '@/src/Header'
 import MainReasons from '@/src/MainReasons'
 import Head from 'next/head'
@@ -25,6 +26,7 @@ export default function Home() {
       <CarouselHome />
       <MainReasons />
       <DownloadSection />
+      <Footer />
     </>
   )
 }

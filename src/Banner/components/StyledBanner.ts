@@ -19,15 +19,17 @@ div{
   .btn_downloadPrincipal{
     position: absolute;
     background: linear-gradient(90deg, rgba(0,210,78,0.6091430322128851) 0%, rgba(0,152,255,1) 70%, rgba(0,152,255,1) 100%);
-    right: 16px;
-    top: 30px;
-    border: unset;
+    color: ${({theme})=> theme.text_color};      
     width: 198px;
     height: 45px;
+    right: 16px;
+    top: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: unset;
     border-radius: 2px;
-    a{
-      color: ${({theme})=> theme.text_color};      
-    }
     :hover, :focus{
       background-color: rgb(0,152,255);      
     }
@@ -35,15 +37,17 @@ div{
   .btn_webVersion{
     position: absolute;
     background-color: unset;
+    color: ${({theme})=> theme.text_color};      
+    width: 150px;
+    height: 45px;
     right: 16px;
     top: 90px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid ${({theme})=> theme.text_color};
     border-radius: 3px;
-    a{
-      color: ${({theme})=> theme.text_color};      
-    }
-    :hover{
+    :hover, :focus{
       background-color: ${({theme})=> theme.text_color};
       color: ${({theme})=> theme.background_base};
     }

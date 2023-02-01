@@ -14,8 +14,12 @@ export default function Header({isHomePage}:Props) {
             Funcionalidades
             <img src="img/Header-Footer/expand-more-dropdown.svg" alt="ícone dropdown do menu" />
           </li>
-          <li>Sobre</li>
-          <li>FAQ</li>
+          <a href="">
+            <li>Sobre</li>
+          </a>
+          <a href="">
+            <li>FAQ</li>
+          </a>
         </ul>
       </nav>
     </StyledHeader>
