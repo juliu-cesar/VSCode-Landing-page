@@ -32,7 +32,7 @@ export default function CarouselHome() {
       if (elementIndex == 2) {
         clearPrevAndSelect(2);
       }
-    }, 3000);
+    }, 6000);
   }, [startInterval]);
 
   function clearPrevAndSelect(i: number) {
