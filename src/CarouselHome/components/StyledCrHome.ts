@@ -16,22 +16,48 @@ export const StyledDivCrHome = styled.div`
       color: ${({ theme }) => theme.text_color};
       width: 80px;
       height: 80px;
-      border: 2px solid ${({ theme }) => theme.second_color};
+      border: 2px solid ${({ theme }) => theme.third_color};
       border-radius: 50%;
+      transition: all .5s;      
+      :hover{
+        box-shadow: 0 0 4px ${({ theme }) => theme.second_color};
+      }
     }
-    #btn_Int::after {
+    #Intellisense_border{
       content: "";
       position: absolute;
-      width: 2px;
-      height: 28px;
-      left: calc(50% - 1px);
-      bottom: -28px;
-      margin: 0px;
+      opacity: 0;
       background-color: ${({ theme }) => theme.second_color};
-      display: block;
+      width: 2px;
+      height: 27px;
+      top: 77px;
+      left: calc(50% - 1px);
+      transition: all .4s;
+    }
+    #Snippet_border{
+      content: "";
+      position: absolute;
+      opacity: 0;
+      background-color: ${({ theme }) => theme.second_color};
+      width: 2px;
+      height: 27px;
+      top: 77px;
+      left: calc(50% - 1px);      
+      transition: all .4s;
+    }
+    #Debug_border{
+      content: "";
+      position: absolute;
+      opacity: 0;
+      background-color: ${({ theme }) => theme.second_color};
+      width: 2px;
+      height: 27px;
+      top: 77px;
+      left: calc(50% - 1px);      
+      transition: all .4s;
     }
   }
-  .crHome {
+  .frame_carousel {
     position: relative;
     width: 100%;
     height: 210px;
@@ -39,59 +65,38 @@ export const StyledDivCrHome = styled.div`
     border-bottom: 2px solid;
     border-color: ${({ theme }) => theme.second_color};
     overflow: hidden;
-    .FrameCarousel {
-      background-color: ${({ theme }) => theme.background_2};
-      width: 300px;
-      height: 190px;
-      padding: 10px;
+    #Carousel{
+      height: 100%;
+      padding-left: 20px;
       display: flex;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      .IntelliSense {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 2px;
-        img {
-          width: 180%;
-          border-radius: 2px;
-        }
+      gap: 10px;
+      transition: all .7s ease-in-out;
+      .card_carousel {
+        background-color: ${({ theme }) => theme.background_2};
+        width: 300px;
+        height: 190px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 4px #222;
+        .frame_imgCr{
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          #Intellisense{
+            height: 100%;
+          }
+          #Snippet{
+            height: 100%;
+          }
+          #Debug{
+            height: 100%;
+          }
+        }      
       }
-      .Snippet {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 2px;
-        img {
-          width: 145%;
-          border-radius: 2px;
-        }
-      }
-      .Debug {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 2px;
-        img {
-          width: 100px;
-          border-radius: 2px;
-        }
-      }
-    }
-    #IntelliSense {
-      position: absolute;
-      left: 10px;
-      top: calc(210px / 2 - 47%);
-    }
-    #Snippet {
-      position: absolute;
-      left: 320px;
-      top: calc(210px / 2 - 47%);
-    }
-    #Debug {
-      left: 630px;
-      position: absolute;
-      top: calc(210px / 2 - 47%);
     }
   }
 `;
