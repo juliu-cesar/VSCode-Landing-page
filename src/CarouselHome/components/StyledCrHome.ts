@@ -38,6 +38,7 @@ export const StyledDivCrHome = styled.div`
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-color: ${({ theme }) => theme.second_color};
+    overflow: hidden;
     .FrameCarousel {
       background-color: ${({ theme }) => theme.background_2};
       width: 300px;
