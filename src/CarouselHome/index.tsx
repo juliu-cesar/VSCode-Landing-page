@@ -1,66 +1,98 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { StyledDivCrHome } from "./components/StyledCrHome";
 
 export default function CarouselHome() {
-  let inicialX: number = 0;
-  let selectIndex: number = 1;
-  let interval: NodeJS.Timer;
+  const [startInterval, setStartInterval] = useState(false);
+  let elementIndex: number = 0;
+  let interval: NodeJS.Timer | undefined;
 
   useEffect(() => {
     if (interval) return;
+
+    interval = setInterval(() => {
+      const allButtons = document.querySelectorAll(
+        ".Buttons button"
+      ) as NodeListOf<HTMLElement>;
+
+      allButtons.forEach((el, index) => {
+        if (el.classList[0] == "activeBtn") {
+          elementIndex = index;
+        }
+      });
+      elementIndex += 1;
+      if (elementIndex == 3) {
+        elementIndex = 0;
+      }
+      if (elementIndex == 0) {
+        clearPrevAndSelect(0);
+      }
+      if (elementIndex == 1) {
+        clearPrevAndSelect(1);
+      }
+      if (elementIndex == 2) {
+        clearPrevAndSelect(2);
+      }
+    }, 3000);
+  }, [startInterval]);
+
+  function clearPrevAndSelect(i: number) {
     const carousel = document.querySelector("#Carousel") as HTMLElement;
     const allButtons = document.querySelectorAll(
       ".Buttons button"
-      ) as NodeListOf<HTMLElement>;
-      
-      allButtons[selectIndex - 1].style.borderColor = "#007ACC";
-      (allButtons[selectIndex -1].children[0] as HTMLElement).style.opacity = "1";
-    interval = setInterval(() => {
-      inicialX = +inicialX - 300;
-      
-      console.log("children elemento 1: ", allButtons[0].children[0]);
+    ) as NodeListOf<HTMLElement>;
 
-      if (inicialX < -700) {
-        inicialX = 0;
-        selectIndex = 0;
+    allButtons.forEach((el, index) => {
+      if (i == index) {
+        el.style.borderColor = "#007ACC";
+        el.classList.add("activeBtn");
+        (el.children[0] as HTMLElement).style.opacity = "1";
+      } else {
+        el.style.borderColor = "#004D80";
+        el.classList.remove("activeBtn");
+        (el.children[0] as HTMLElement).style.opacity = "0";
       }
+    });
+    carousel.style.transform = `translateX(${i * -300}px)`;
+  }
 
-      if (selectIndex == 0) {
-        allButtons[selectIndex + 1].style.borderColor = "#004D80";
-        allButtons[selectIndex + 2].style.borderColor = "#004D80";
-        (allButtons[selectIndex+1].children[0] as HTMLElement).style.opacity = "0";
-        (allButtons[selectIndex+2].children[0] as HTMLElement).style.opacity = "0";
-      }
-      if (selectIndex == 1) {
-        allButtons[selectIndex - 1].style.borderColor = "#004D80";
-        allButtons[selectIndex + 1].style.borderColor = "#004D80";
-        (allButtons[selectIndex-1].children[0] as HTMLElement).style.opacity = "0";
-        (allButtons[selectIndex+1].children[0] as HTMLElement).style.opacity = "0";
-      }
-      if (selectIndex == 2) {
-        allButtons[selectIndex - 1].style.borderColor = "#004D80";
-        allButtons[selectIndex - 2].style.borderColor = "#004D80";
-        (allButtons[selectIndex-1].children[0] as HTMLElement).style.opacity = "0";
-        (allButtons[selectIndex-2].children[0] as HTMLElement).style.opacity = "0";
-      }
-
-      allButtons[selectIndex].style.borderColor = "#007ACC";
-      (allButtons[selectIndex].children[0] as HTMLElement).style.opacity = "1";
-      carousel.style.transform = `translateX(${inicialX}px)`;
-      selectIndex++;
-    }, 6000);
-  }, []);
+  function selectCard(target: HTMLElement): void {
+    clearInterval(interval);
+    interval = undefined;
+    if (target.id == "btn_Int") {
+      elementIndex = 0;
+      clearPrevAndSelect(0);
+    }
+    if (target.id == "btn_Sni") {
+      elementIndex = 1;
+      clearPrevAndSelect(1);
+    }
+    if (target.id == "btn_Deb") {
+      elementIndex = 2;
+      clearPrevAndSelect(2);
+    }
+    setStartInterval(startInterval ? false : true);
+  }
 
   return (
     <StyledDivCrHome>
       <div className="Buttons">
-        <button id="btn_Int">
+        <button
+          id="btn_Int"
+          className="activeBtn"
+          onClick={(e) => selectCard(e.target as HTMLElement)}
+        >
           IntelliSense<span id="Intellisense_border"></span>
         </button>
-        <button id="btn_Sni">
+        <button
+          id="btn_Sni"
+          onClick={(e) => selectCard(e.target as HTMLElement)}
+        >
           Snippets<span id="Snippet_border"></span>
         </button>
-        <button id="btn_Deb">
+        <button
+          id="btn_Deb"
+          onClick={(e) => selectCard(e.target as HTMLElement)}
+        >
           Debugging<span id="Debug_border"></span>
         </button>
       </div>

@@ -23,10 +23,13 @@ export const StyledDivCrHome = styled.div`
         box-shadow: 0 0 4px ${({ theme }) => theme.second_color};
       }
     }
+    #btn_Int{
+      border: 2px solid ${({ theme }) => theme.second_color};
+    }
     #Intellisense_border{
       content: "";
       position: absolute;
-      opacity: 0;
+      opacity: 1;
       background-color: ${({ theme }) => theme.second_color};
       width: 2px;
       height: 27px;
@@ -60,7 +63,7 @@ export const StyledDivCrHome = styled.div`
   .frame_carousel {
     position: relative;
     width: 100%;
-    height: 210px;
+    height: 204px;
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-color: ${({ theme }) => theme.second_color};
@@ -75,13 +78,15 @@ export const StyledDivCrHome = styled.div`
       transition: all .7s ease-in-out;
       .card_carousel {
         background-color: ${({ theme }) => theme.background_2};
-        width: 300px;
-        height: 190px;
+        width: 302px;
+        height: 200px;
         padding: 5px;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-color: ${({ theme }) => theme.second_color};
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 2px 2px 4px #222;
         .frame_imgCr{
           width: 100%;
           height: 100%;
