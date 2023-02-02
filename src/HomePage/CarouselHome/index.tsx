@@ -11,7 +11,7 @@ export default function CarouselHome() {
 
     interval = setInterval(() => {
       const allButtons = document.querySelectorAll(
-        ".Buttons button"
+        ".ButtonsCrHome button"
       ) as NodeListOf<HTMLElement>;
 
       allButtons.forEach((el, index) => {
@@ -20,62 +20,53 @@ export default function CarouselHome() {
         }
       });
       elementIndex += 1;
-      if (elementIndex == 3) {
+      if (elementIndex == allButtons.length) {
         elementIndex = 0;
       }
-      if (elementIndex == 0) {
-        clearPrevAndSelect(0);
-      }
-      if (elementIndex == 1) {
-        clearPrevAndSelect(1);
-      }
-      if (elementIndex == 2) {
-        clearPrevAndSelect(2);
-      }
-    }, 6000);
+      clearPrevAndSelect(elementIndex);
+    }, 2000);
+
+    return () => {
+      clearInterval(interval);
+      interval = undefined;
+    };
   }, [startInterval]);
 
   function clearPrevAndSelect(i: number) {
-    const carousel = document.querySelector("#Carousel") as HTMLElement;
+    const carousel = document.querySelector("#CarouselHome") as HTMLElement;
     const allButtons = document.querySelectorAll(
-      ".Buttons button"
+      ".ButtonsCrHome button"
     ) as NodeListOf<HTMLElement>;
 
     allButtons.forEach((el, index) => {
       if (i == index) {
-        el.style.borderColor = "#007ACC";
         el.classList.add("activeBtn");
-        (el.children[0] as HTMLElement).style.opacity = "1";
       } else {
-        el.style.borderColor = "#004D80";
         el.classList.remove("activeBtn");
-        (el.children[0] as HTMLElement).style.opacity = "0";
       }
     });
     carousel.style.transform = `translateX(${i * -300}px)`;
   }
 
   function selectCard(target: HTMLElement): void {
+    const allButtons = document.querySelectorAll(
+      ".ButtonsCrHome button"
+    ) as NodeListOf<HTMLElement>;
+
     clearInterval(interval);
     interval = undefined;
-    if (target.id == "btn_Int") {
-      elementIndex = 0;
-      clearPrevAndSelect(0);
-    }
-    if (target.id == "btn_Sni") {
-      elementIndex = 1;
-      clearPrevAndSelect(1);
-    }
-    if (target.id == "btn_Deb") {
-      elementIndex = 2;
-      clearPrevAndSelect(2);
-    }
+    allButtons.forEach((el, index) => {
+      if (el == target) {
+        elementIndex = index;
+        clearPrevAndSelect(index);
+      }
+    });
     setStartInterval(startInterval ? false : true);
   }
 
   return (
     <StyledDivCrHome>
-      <div className="Buttons">
+      <div className="ButtonsCrHome">
         <button
           id="btn_Int"
           className="activeBtn"
@@ -97,7 +88,7 @@ export default function CarouselHome() {
         </button>
       </div>
       <div className="frame_carousel">
-        <div id="Carousel">
+        <div id="CarouselHome">
           <div className="card_carousel">
             <div className="frame_imgCr">
               <img

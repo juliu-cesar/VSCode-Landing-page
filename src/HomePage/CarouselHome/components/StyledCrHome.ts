@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledDivCrHome = styled.div`
   position: relative;
   width: 100%;
-  .Buttons {
+  .ButtonsCrHome {
     width: 100%;
     height: 90px;
     padding: 5px;
@@ -22,42 +22,23 @@ export const StyledDivCrHome = styled.div`
       :hover{
         box-shadow: 0 0 4px ${({ theme }) => theme.second_color};
       }
+      span{
+        content: "";
+        position: absolute;
+        opacity: 0;
+        background-color: ${({ theme }) => theme.second_color};
+        width: 2px;
+        height: 27px;
+        top: 77px;
+        left: calc(50% - 1px);
+        transition: all .4s;
+      }
     }
-    #btn_Int{
+    .activeBtn{
       border: 2px solid ${({ theme }) => theme.second_color};
-    }
-    #Intellisense_border{
-      content: "";
-      position: absolute;
-      opacity: 1;
-      background-color: ${({ theme }) => theme.second_color};
-      width: 2px;
-      height: 27px;
-      top: 77px;
-      left: calc(50% - 1px);
-      transition: all .4s;
-    }
-    #Snippet_border{
-      content: "";
-      position: absolute;
-      opacity: 0;
-      background-color: ${({ theme }) => theme.second_color};
-      width: 2px;
-      height: 27px;
-      top: 77px;
-      left: calc(50% - 1px);      
-      transition: all .4s;
-    }
-    #Debug_border{
-      content: "";
-      position: absolute;
-      opacity: 0;
-      background-color: ${({ theme }) => theme.second_color};
-      width: 2px;
-      height: 27px;
-      top: 77px;
-      left: calc(50% - 1px);      
-      transition: all .4s;
+      span{
+        opacity: 1;
+      }
     }
   }
   .frame_carousel {
@@ -68,7 +49,7 @@ export const StyledDivCrHome = styled.div`
     border-bottom: 2px solid;
     border-color: ${({ theme }) => theme.second_color};
     overflow: hidden;
-    #Carousel{
+    #CarouselHome{
       height: 100%;
       padding-left: 20px;
       display: flex;

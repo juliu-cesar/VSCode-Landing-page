@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { StyledHeader } from "./components/StyledHeader";
 
 interface Props{
@@ -9,14 +10,16 @@ export default function Header({isHomePage}:Props) {
     <StyledHeader>
       <nav>
         <ul className="text_main">
-          {isHomePage && <img className="btn_homePage" src="img/Header-Footer/vscode-svg-icon.svg" alt="Botão para voltar a pagina principal com o logo do VS Code." />}          
+          {!isHomePage && 
+          <Link href={"/"}><img className="btn_homePage" src="img/Header-Footer/vscode-svg-icon.svg" alt="Botão para voltar a pagina principal com o logo do VS Code." /></Link>
+          }          
           <li className="resources_menu">
             Funcionalidades
             <img src="img/Header-Footer/expand-more-dropdown.svg" alt="ícone dropdown do menu" />
           </li>
-          <a href="">
+          <Link href={"/about"}>
             <li>Sobre</li>
-          </a>
+          </Link>
           <a href="">
             <li>FAQ</li>
           </a>
