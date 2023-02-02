@@ -4,14 +4,17 @@ import styled from "styled-components";
 export const StyledTaT = styled.div`
 h1{
   width: 100%;
-  padding: 16px 30px;
-  font-size: 27px;
+  padding: 10px 30px;
+  font-size: 25px;
+  line-height: 27px;
 }
 h2{
   background-color: ${({theme})=> theme.background_2};
+  font-size: 20px;
   margin: 10px 16px;
-  padding: 3px 16px;
-
+  margin-top: 25px;
+  padding: 10px 16px;
+  line-height: 23px;
 }
 p{
   width: 100%;
