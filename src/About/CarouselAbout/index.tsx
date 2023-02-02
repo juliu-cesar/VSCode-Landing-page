@@ -1,11 +1,75 @@
+import { useEffect, useState } from "react";
 import { StyledCrAbout } from "./components/StyledCrAbout";
 
 export default function CarouselAbout() {
+  const [startInterval, setStartInterval] = useState(false);
+  let elementIndex: number = 0;
+  let interval: NodeJS.Timer | undefined;
+
+  useEffect(() => {
+    if (interval) return;
+    const buttons = document.querySelectorAll(".ButtonsCrAbout button");
+
+    interval = setInterval(() => {
+      const allButtons = document.querySelectorAll(
+        ".ButtonsCrAbout button"
+      ) as NodeListOf<HTMLElement>;
+
+      allButtons.forEach((el, index) => {
+        if (el.classList[0] == "activeBtn") {
+          elementIndex = index;
+        }
+      });
+
+      elementIndex += 1;
+      if (elementIndex == buttons.length) {
+        elementIndex = 0;
+      }
+      clearPrevAndSelect(elementIndex);
+    }, 6000);
+
+    return () => {
+      clearInterval(interval);
+      interval = undefined;
+    };
+  }, [startInterval]);
+
+  function clearPrevAndSelect(i: number) {
+    const carousel = document.querySelector("#CarouselAbout") as HTMLElement;
+    const allButtons = document.querySelectorAll(
+      ".ButtonsCrAbout button"
+    ) as NodeListOf<HTMLElement>;
+
+    allButtons.forEach((el, index) => {
+      if (index == i) {
+        el.classList.add("activeBtn");
+      } else {
+        el.classList.remove("activeBtn");
+      }
+    });
+    carousel.style.transform = `translateX(${i * -315}px)`;
+  }
+
+  function selectCard(target: HTMLElement): void {
+    const allButtons = document.querySelectorAll(
+      ".ButtonsCrAbout button"
+    ) as NodeListOf<HTMLElement>;
+
+    clearInterval(interval);
+    interval = undefined;
+    allButtons.forEach((el, index) => {
+      if (el == target) {
+          elementIndex = index;
+          clearPrevAndSelect(index);
+      }
+    });
+    setStartInterval(startInterval ? false : true);
+  }
   return (
     <StyledCrAbout>
       <div className="container">
         <div className="frame_crAbout">
-          <div className="carousel_about">
+          <div id="CarouselAbout">
             <div className="card_crAbout">
               <div className="frame_img_crAbout">
                 <img
@@ -71,10 +135,27 @@ export default function CarouselAbout() {
           </div>
         </div>
         <div className="ButtonsCrAbout">
-          <button className="active"></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button
+            className="activeBtn"
+            onClick={(e) => {
+              selectCard(e.target as HTMLElement);
+            }}
+          ></button>
+          <button
+            onClick={(e) => {
+              selectCard(e.target as HTMLElement);
+            }}
+          ></button>
+          <button
+            onClick={(e) => {
+              selectCard(e.target as HTMLElement);
+            }}
+          ></button>
+          <button
+            onClick={(e) => {
+              selectCard(e.target as HTMLElement);
+            }}
+          ></button>
         </div>
       </div>
     </StyledCrAbout>

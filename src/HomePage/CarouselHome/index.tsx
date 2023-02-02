@@ -10,10 +10,8 @@ export default function CarouselHome() {
     if (interval) return;
 
     interval = setInterval(() => {
-      console.log("Start");
-      
       const allButtons = document.querySelectorAll(
-        ".Buttons button"
+        ".ButtonsCrHome button"
       ) as NodeListOf<HTMLElement>;
 
       allButtons.forEach((el, index) => {
@@ -22,18 +20,11 @@ export default function CarouselHome() {
         }
       });
       elementIndex += 1;
-      if (elementIndex == 3) {
+      if (elementIndex == allButtons.length - 1) {
         elementIndex = 0;
       }
-      if (elementIndex == 0) {
-        clearPrevAndSelect(0);
-      }
-      if (elementIndex == 1) {
-        clearPrevAndSelect(1);
-      }
-      if (elementIndex == 2) {
-        clearPrevAndSelect(2);
-      }
+      clearPrevAndSelect(elementIndex);
+
     }, 6000);
 
     return ()=>{
@@ -43,9 +34,9 @@ export default function CarouselHome() {
   }, [startInterval]);
 
   function clearPrevAndSelect(i: number) {
-    const carousel = document.querySelector("#Carousel") as HTMLElement;
+    const carousel = document.querySelector("#CarouselHome") as HTMLElement;
     const allButtons = document.querySelectorAll(
-      ".Buttons button"
+      ".ButtonsCrHome button"
     ) as NodeListOf<HTMLElement>;
 
     allButtons.forEach((el, index) => {
@@ -63,26 +54,24 @@ export default function CarouselHome() {
   }
 
   function selectCard(target: HTMLElement): void {
+    const allButtons = document.querySelectorAll(
+      ".ButtonsCrHome button"
+    ) as NodeListOf<HTMLElement>;
+    
     clearInterval(interval);
     interval = undefined;
-    if (target.id == "btn_Int") {
-      elementIndex = 0;
-      clearPrevAndSelect(0);
-    }
-    if (target.id == "btn_Sni") {
-      elementIndex = 1;
-      clearPrevAndSelect(1);
-    }
-    if (target.id == "btn_Deb") {
-      elementIndex = 2;
-      clearPrevAndSelect(2);
-    }
+    allButtons.forEach((el, index) => {
+      if (el == target) {
+          elementIndex = index;
+          clearPrevAndSelect(index);
+      }
+    });
     setStartInterval(startInterval ? false : true);
   }
 
   return (
     <StyledDivCrHome>
-      <div className="Buttons">
+      <div className="ButtonsCrHome">
         <button
           id="btn_Int"
           className="activeBtn"
@@ -104,7 +93,7 @@ export default function CarouselHome() {
         </button>
       </div>
       <div className="frame_carousel">
-        <div id="Carousel">
+        <div id="CarouselHome">
           <div className="card_carousel">
             <div className="frame_imgCr">
               <img

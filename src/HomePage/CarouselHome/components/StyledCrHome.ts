@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledDivCrHome = styled.div`
   position: relative;
   width: 100%;
-  .Buttons {
+  .ButtonsCrHome {
     width: 100%;
     height: 90px;
     padding: 5px;
