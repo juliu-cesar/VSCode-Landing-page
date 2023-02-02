@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function Header({ isHomePage }: Props) {
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
   function dropdown() {
     setShowDropdown(showDropdown ? false : true);
   }

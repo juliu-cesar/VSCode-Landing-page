@@ -18,12 +18,16 @@ h2{
 }
 p{
   width: 100%;
+  padding: 0 30px;
+  margin-bottom: 5px;
   line-height: 17px;
   font-size: 14px;
-  padding: 0 30px;
   font-weight: 300;
 }
 .emphasis{
   font-weight: 500;
+}
+.color_principal{
+  color: ${({theme})=> theme.primary_color};
 }
 `

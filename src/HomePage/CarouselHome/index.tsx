@@ -94,7 +94,7 @@ export default function CarouselHome() {
               <img
                 id="Intellisense"
                 src="img/IntelliSense/intellisense-principal-gif.gif"
-                alt="Gif apresentando o recurso de conclusão de código."
+                alt="Recurso de conclusão de código através do IntelliSense."
               />
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function CarouselHome() {
               <img
                 id="Snippet"
                 src="img/Snippet/snippet-principal-gif.gif"
-                alt="Gif apresentando o recurso de conclusão de código."
+                alt="Utilização do Snippet para adicionar grande quantidade de linhas de código pré prontas. "
               />
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function CarouselHome() {
               <img
                 id="Debug"
                 src="img/Debug/debug-principal.png"
-                alt="Gif apresentando o recurso de conclusão de código."
+                alt="Aba de Debug aberta durante uma depuração"
               />
             </div>
           </div>

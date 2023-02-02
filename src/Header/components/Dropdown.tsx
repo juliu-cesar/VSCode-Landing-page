@@ -31,7 +31,7 @@ export default function Dropdown({showDropdown}: Prop) {
 
   return (
     <StyledDropdown className="Dropdown_nav">
-      <Link href="">
+      <Link href="/code-navigation">
         <div>Code Navigation</div>
       </Link>
       <Link href="">
