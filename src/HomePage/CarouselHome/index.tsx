@@ -20,17 +20,16 @@ export default function CarouselHome() {
         }
       });
       elementIndex += 1;
-      if (elementIndex == allButtons.length - 1) {
+      if (elementIndex == allButtons.length) {
         elementIndex = 0;
       }
       clearPrevAndSelect(elementIndex);
+    }, 2000);
 
-    }, 6000);
-
-    return ()=>{
-      clearInterval(interval)
+    return () => {
+      clearInterval(interval);
       interval = undefined;
-    }
+    };
   }, [startInterval]);
 
   function clearPrevAndSelect(i: number) {
@@ -41,13 +40,9 @@ export default function CarouselHome() {
 
     allButtons.forEach((el, index) => {
       if (i == index) {
-        el.style.borderColor = "#007ACC";
         el.classList.add("activeBtn");
-        (el.children[0] as HTMLElement).style.opacity = "1";
       } else {
-        el.style.borderColor = "#004D80";
         el.classList.remove("activeBtn");
-        (el.children[0] as HTMLElement).style.opacity = "0";
       }
     });
     carousel.style.transform = `translateX(${i * -300}px)`;
@@ -57,13 +52,13 @@ export default function CarouselHome() {
     const allButtons = document.querySelectorAll(
       ".ButtonsCrHome button"
     ) as NodeListOf<HTMLElement>;
-    
+
     clearInterval(interval);
     interval = undefined;
     allButtons.forEach((el, index) => {
       if (el == target) {
-          elementIndex = index;
-          clearPrevAndSelect(index);
+        elementIndex = index;
+        clearPrevAndSelect(index);
       }
     });
     setStartInterval(startInterval ? false : true);
