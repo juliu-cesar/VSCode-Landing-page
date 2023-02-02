@@ -7,6 +7,12 @@ h1{
   padding: 16px 30px;
   font-size: 27px;
 }
+h2{
+  background-color: ${({theme})=> theme.background_2};
+  margin: 10px 16px;
+  padding: 3px 16px;
+
+}
 p{
   width: 100%;
   line-height: 17px;
