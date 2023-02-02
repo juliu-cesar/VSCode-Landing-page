@@ -6,7 +6,9 @@ export const StyledHeader = styled.header`
   display: block;
   nav {
     width: 100%;
+    height: 50px;
     ul {
+      height: 100%;
       display: flex;
       flex-direction: row;
       justify-content: end;
@@ -25,7 +27,7 @@ export const StyledHeader = styled.header`
         position: absolute;
         width: 35px;
         left: 13px;
-        top: 7px;
+        top: 8px;
       }
       .resources_menu {
         display: flex;

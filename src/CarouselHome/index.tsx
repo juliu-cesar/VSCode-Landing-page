@@ -10,6 +10,8 @@ export default function CarouselHome() {
     if (interval) return;
 
     interval = setInterval(() => {
+      console.log("Start");
+      
       const allButtons = document.querySelectorAll(
         ".Buttons button"
       ) as NodeListOf<HTMLElement>;
@@ -33,6 +35,11 @@ export default function CarouselHome() {
         clearPrevAndSelect(2);
       }
     }, 6000);
+
+    return ()=>{
+      clearInterval(interval)
+      interval = undefined;
+    }
   }, [startInterval]);
 
   function clearPrevAndSelect(i: number) {
