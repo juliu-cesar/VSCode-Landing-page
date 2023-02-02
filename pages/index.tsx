@@ -1,13 +1,10 @@
-import Banner from '@/src/Banner'
-import CarouselHome from '@/src/CarouselHome'
-import DownloadSection from '@/src/DownloadSection'
+import Banner from '@/src/HomePage/Banner'
+import CarouselHome from '@/src/HomePage/CarouselHome'
+import DownloadSection from '@/src/HomePage/DownloadSection'
 import Footer from '@/src/Footer'
 import Header from '@/src/Header'
-import MainReasons from '@/src/MainReasons'
+import MainReasons from '@/src/HomePage/MainReasons'
 import Head from 'next/head'
-import styled from 'styled-components'
-
-
 
 export default function Home() {
   return (
