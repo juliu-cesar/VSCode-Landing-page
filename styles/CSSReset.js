@@ -11,6 +11,7 @@ export const CSSReset = createGlobalStyle`
 		background-color: ${({theme})=> theme.background_base};
 		color: ${({theme})=> theme.text_color};
     font-family: 'Mukta', sans-serif;
+    overflow-x: hidden;
   }
   .subtitle{
     font-size: 17px;

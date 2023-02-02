@@ -13,13 +13,17 @@ export const StyledHeader = styled.header`
       flex-direction: row;
       justify-content: end;
       align-items: center;
+      button {
+        background-color: unset;
+        border: unset;
+      }
       li {
         list-style: none;
         padding: 13px;
         color: ${({ theme }) => theme.text_color};
         opacity: 0.7;
-        transition: opacity .3s;
-        :hover{
+        transition: opacity 0.3s;
+        :hover {
           opacity: 1;
         }
       }
@@ -29,12 +33,23 @@ export const StyledHeader = styled.header`
         left: 13px;
         top: 8px;
       }
+      span {
+        position: relative;
+      }
       .resources_menu {
         display: flex;
         align-items: center;
         img {
           width: 20px;
         }
+      }
+      #CoverDisplay {
+        z-index: 10;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
       }
     }
   }
