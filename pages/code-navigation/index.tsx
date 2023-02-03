@@ -9,8 +9,6 @@ export default function CodeNavigation() {
       <Header isHomePage={false} />
       <TitleAndText>
         <h1>Code Navigation</h1>
-      </TitleAndText>
-      <TitleAndText>
         <p>
           O Visual Studio Code possui um editor de código de alta produtividade
           que, quando combinado com serviços de linguagem de programação,

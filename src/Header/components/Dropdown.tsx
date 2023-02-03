@@ -34,7 +34,7 @@ export default function Dropdown({showDropdown}: Prop) {
       <Link href="/code-navigation">
         <div>Code Navigation</div>
       </Link>
-      <Link href="">
+      <Link href="/debug">
         <div>Debugging</div>
       </Link>
       <Link href="">
