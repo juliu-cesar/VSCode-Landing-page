@@ -21,10 +21,9 @@ export default function Debug() {
           compilação e loop de depuração.
         </p>
       </TitleAndText>
-      <ImgCard
-        Src="debug-principal"
-        Alt="Aba de depurar aberta durante uma depuração."
-      />
+      <ImgCard>
+        <img src="img/Debug/debug-principal.png" alt="Aba de depurar aberta durante uma depuração." />
+      </ImgCard>
       <TitleAndText>
         <h2>Debugging</h2>
         <p>
@@ -52,10 +51,9 @@ export default function Debug() {
           <span className="emphasis color_principal">Ctrl+Shift+D</span>.
         </p>
       </TitleAndText>
-      <ImgCard
-        Src="debug-tab"
-        Alt="Localização do botão para abrir a aba de Depurar, situada na Barra de Atividade."
-      />
+      <ImgCard>
+        <img src="img/Debug/debug-tab.png" alt="Localização do botão para abrir a aba de Depurar, situada na Barra de Atividade." />
+      </ImgCard>
       <TitleAndText>
         <p>
           Se o depurador ainda não estiver configurado (nenhuma launch.json foi
@@ -65,10 +63,9 @@ export default function Debug() {
           <span className="code2 underline">launch.json</span>.
         </p>
       </TitleAndText>
-      <ImgCard
-        Src="debug-first-start"
-        Alt="Aba de depurar quando aberta pela primeira vez."
-      />
+      <ImgCard>
+        <img src="img/Debug/debug-first-start.png" alt="Aba de depurar quando aberta pela primeira vez." />
+      </ImgCard>
       <TitleAndText>
         <h2>Iniciar configurações</h2>
         <p>
@@ -93,20 +90,18 @@ export default function Debug() {
           <span className="emphasis">criar um arquivo launch.json</span>.
         </p>
       </TitleAndText>
-      <ImgCard
-        Src="debug-create-launch"
-        Alt="Opção para criar o arquivo launch.json destacada, logo abaixo do botão 'Iniciar e Depurar'."
-      />
+      <ImgCard>
+        <img src="img/Debug/debug-create-launch.png" alt="Opção para criar o arquivo launch.json destacada, logo abaixo do botão 'Iniciar e Depurar'." />
+      </ImgCard>
       <TitleAndText>
         <p>
           O VS Code tentará detectar automaticamente seu ambiente de depuração,
           mas se isso falhar, você terá que escolher manualmente:
         </p>
       </TitleAndText>
-      <ImgCard
-        Src="debug-select-language"
-        Alt="Janela para selecionar a linguagem de programação da depuração aberta."
-      />
+      <ImgCard>
+        <img src="img/Debug/debug-select-language.png" alt="Janela para selecionar a linguagem de programação da depuração aberta." />
+      </ImgCard>
       <TitleAndText>
         <p>
           Abaixo temos uma configuração de inicialização gerada para depuração
@@ -157,10 +152,9 @@ export default function Debug() {
           de Depuração aparecerá na parte superior do editor.
         </p>
       </TitleAndText>
-      <ImgCard
-        Src="debug-actions"
-        Alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros."
-      />
+      <ImgCard>
+        <img src="img/Debug/debug-actions.png" alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros." />
+      </ImgCard>
       <Table>
         <table>
           <thead>

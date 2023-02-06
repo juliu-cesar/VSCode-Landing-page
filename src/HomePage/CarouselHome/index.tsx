@@ -24,7 +24,7 @@ export default function CarouselHome() {
         elementIndex = 0;
       }
       clearPrevAndSelect(elementIndex);
-    }, 2000);
+    }, 6000);
 
     return () => {
       clearInterval(interval);

@@ -1,14 +1,13 @@
 import { StyledImgCard } from "./components/StyledImgCard";
 
 interface Props {
-  Src: string;
-  Alt: string;
+  children: React.ReactNode
 }
 
-export default function ImgCard({ Src, Alt }: Props) {
+export default function ImgCard({ children }: Props) {
   return (
     <StyledImgCard>
-      <img src={`img/Debug/${Src}.png`} alt={Alt} />
+      {children}
     </StyledImgCard>
   );
 }
