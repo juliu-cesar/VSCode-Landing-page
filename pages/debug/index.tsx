@@ -153,7 +153,8 @@ export default function Debug() {
       <TitleAndText>
         <h2>Ações de depuração</h2>
         <p>
-        Assim que uma sessão de depuração for iniciada, a barra de Ferramentas de Depuração aparecerá na parte superior do editor.
+          Assim que uma sessão de depuração for iniciada, a barra de Ferramentas
+          de Depuração aparecerá na parte superior do editor.
         </p>
       </TitleAndText>
       <ImgCard
@@ -161,9 +162,84 @@ export default function Debug() {
         Alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros."
       />
       <Table>
-        
+        <table>
+          <thead>
+            <tr>
+              <th>Ação</th>
+              <th>Explicação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                Continuar / Pausar
+                <br />
+                <span className="emphasis">F5</span>
+              </th>
+              <td>
+                <span className="emphasis">Continuar</span>: Retoma a execução
+                normal do programa/script (até o próximo ponto de interrupção).
+                <br />
+                <span className="emphasis">Pausa</span>: inspecionar o código em
+                execução na linha atual e depurar linha por linha.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Passar
+                <br />
+                <span className="emphasis">F10</span>
+              </th>
+              <td>
+                Execute o próximo método como um único comando sem inspecionar
+                ou seguir as etapas de seus componentes.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Entre no
+                <br />
+                <span className="emphasis">F11</span>
+              </th>
+              <td>
+                Insira o próximo método para acompanhar sua execução linha por
+                linha.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Sair
+                <br />
+                <span className="emphasis">Shift+F11</span>
+              </th>
+              <td>
+                Quando estiver dentro de um método ou sub-rotina, retorne ao
+                contexto de execução anterior completando as linhas restantes do
+                método atual como se fosse um único comando.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Reiniciar
+                <br />
+                <span className="emphasis">Ctrl+Shift+F5</span>
+              </th>
+              <td>
+                Encerre a execução do programa atual e inicie a depuração
+                novamente usando a configuração de execução atual.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Parar
+                <br />
+                <span className="emphasis">Shift+F5</span>
+              </th>
+              <td>Termina a execução do programa atual.</td>
+            </tr>
+          </tbody>
+        </table>
       </Table>
-
       <Footer />
     </>
   );

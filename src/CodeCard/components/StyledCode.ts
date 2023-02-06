@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledCode = styled.div`
 width: 100%;
-padding: 15px;
+padding: 16px;
 .frame_code{
   background-color: #202020;
   width: 100%;
