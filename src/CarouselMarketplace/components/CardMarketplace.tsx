@@ -1,3 +1,5 @@
+import { StyledCard } from "./StyledCard";
+
 interface Props {
   src: string;
   title: string;
@@ -12,7 +14,7 @@ export default function CardMarketplace({
   downloads,
 }: Props) {
   return (
-    <>
+    <StyledCard>
       <div className="card_crMarket">
         <div className="frame_img">
           <img
@@ -32,6 +34,6 @@ export default function CardMarketplace({
           </p>
         </div>
       </div>
-    </>
+    </StyledCard>
   );
 }
