@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const StyledTable = styled.div<{ thWidth: number; tdWidth: number }>`
+export const StyledTable = styled.div<{
+  thWidth: number;
+  tdWidth: number;
+  tdWidth_2?: number;
+}>`
   width: 100%;
   padding: 10px 16px;
   .frame_table {
@@ -25,21 +29,20 @@ export const StyledTable = styled.div<{ thWidth: number; tdWidth: number }>`
       tr:nth-child(2n + 1) {
         background-color: ${({ theme }) => theme.background_2};
       }
-
       th,
       td {
         font-weight: 400;
-        padding: 3px;
+        padding: 4px;
       }
-      th{
+      th {
         width: ${(props) => `${props.thWidth}px`};
       }
       td:nth-child(2) {
         width: ${(props) => `${props.tdWidth}px`};
       }
+      td:nth-child(3) {
+        width: ${(props) => `${props.tdWidth_2}px`};
+      }
     }
-  }
-  .emphasis {
-    font-weight: 700;
   }
 `;

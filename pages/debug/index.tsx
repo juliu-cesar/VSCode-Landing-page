@@ -155,7 +155,7 @@ export default function Debug() {
       <ImgCard>
         <img src="img/Debug/debug-actions.png" alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros." />
       </ImgCard>
-      <Table>
+      <Table thWidth={100} tdWidth={250}>
         <table>
           <thead>
             <tr>

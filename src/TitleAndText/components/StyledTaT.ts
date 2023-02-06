@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const StyledTaT = styled.div`
+font-weight: 300;
 h1{
   width: 100%;
   padding: 10px 30px;
@@ -12,7 +13,6 @@ h2{
   background-color: ${({theme})=> theme.background_2};
   font-size: 20px;
   margin: 10px 16px;
-  margin-top: 25px;
   padding: 10px 16px;
   line-height: 23px;
 }
@@ -35,6 +35,22 @@ p{
 }
 .code2{
   color: ${({theme})=> theme.code_2};
+}
+.codeSnippet_1{
+  background-color: ${({theme})=> theme.bg_code_1};
+  color: ${({theme})=> theme.code_1};
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.codeSnippet_2{
+  background-color: ${({theme})=> theme.bg_code_2};
+  color: ${({theme})=> theme.code_2};
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 700;
 }
 .underline{
   text-decoration: underline;
