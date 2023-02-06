@@ -44,5 +44,8 @@ export const StyledTable = styled.div<{
         width: ${(props) => `${props.tdWidth_2}px`};
       }
     }
+    .emphasis{
+      font-weight: 700;
+    }
   }
 `;

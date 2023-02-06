@@ -1,4 +1,3 @@
-import CarouselMarketplace from "@/src/CarouselMarketplace";
 import CodeCard from "@/src/CodeCard";
 import Footer from "@/src/Footer";
 import Header from "@/src/Header";
