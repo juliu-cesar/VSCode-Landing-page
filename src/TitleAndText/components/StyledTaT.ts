@@ -30,4 +30,16 @@ p{
 .color_principal{
   color: ${({theme})=> theme.primary_color};
 }
+.code1{
+  color: ${({theme})=> theme.code_1};
+}
+.code2{
+  color: ${({theme})=> theme.code_2};
+}
+.underline{
+  text-decoration: underline;
+}
+.indent{
+  margin-left: 5px;
+}
 `
