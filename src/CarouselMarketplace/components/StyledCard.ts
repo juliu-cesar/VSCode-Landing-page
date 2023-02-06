@@ -31,7 +31,7 @@ export const StyledCard = styled.div`
       p {
         font-size: 12px;
         font-weight: 300;
-        line-height: 15px;
+        line-height: 13px;
       }
       .download_numbers {
         display: flex;
