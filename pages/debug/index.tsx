@@ -22,7 +22,10 @@ export default function Debug() {
         </p>
       </TitleAndText>
       <ImgCard>
-        <img src="img/Debug/debug-principal.png" alt="Aba de depurar aberta durante uma depuração." />
+        <img
+          src="img/Debug/debug-principal.png"
+          alt="Aba de depurar aberta durante uma depuração."
+        />
       </ImgCard>
       <TitleAndText>
         <h2>Debugging</h2>
@@ -52,7 +55,10 @@ export default function Debug() {
         </p>
       </TitleAndText>
       <ImgCard>
-        <img src="img/Debug/debug-tab.png" alt="Localização do botão para abrir a aba de Depurar, situada na Barra de Atividade." />
+        <img
+          src="img/Debug/debug-tab.png"
+          alt="Localização do botão para abrir a aba de Depurar, situada na Barra de Atividade."
+        />
       </ImgCard>
       <TitleAndText>
         <p>
@@ -64,12 +70,15 @@ export default function Debug() {
         </p>
       </TitleAndText>
       <ImgCard>
-        <img src="img/Debug/debug-first-start.png" alt="Aba de depurar quando aberta pela primeira vez." />
+        <img
+          src="img/Debug/debug-first-start.png"
+          alt="Aba de depurar quando aberta pela primeira vez."
+        />
       </ImgCard>
       <TitleAndText>
         <h2>Iniciar configurações</h2>
         <p>
-          Para executar ou depurar um aplicativo simples no VS Code, selecione
+          Para executar ou depurar um aplicativo simples no VS Code, selecione{" "}
           <span className="emphasis">Iniciar e Depurar</span> na aba inicial de
           depuração ou pressione{" "}
           <span className="emphasis color_principal">F5</span> e o VS Code
@@ -91,7 +100,10 @@ export default function Debug() {
         </p>
       </TitleAndText>
       <ImgCard>
-        <img src="img/Debug/debug-create-launch.png" alt="Opção para criar o arquivo launch.json destacada, logo abaixo do botão 'Iniciar e Depurar'." />
+        <img
+          src="img/Debug/debug-create-launch.png"
+          alt="Opção para criar o arquivo launch.json destacada, logo abaixo do botão 'Iniciar e Depurar'."
+        />
       </ImgCard>
       <TitleAndText>
         <p>
@@ -100,7 +112,10 @@ export default function Debug() {
         </p>
       </TitleAndText>
       <ImgCard>
-        <img src="img/Debug/debug-select-language.png" alt="Janela para selecionar a linguagem de programação da depuração aberta." />
+        <img
+          src="img/Debug/debug-select-language.png"
+          alt="Janela para selecionar a linguagem de programação da depuração aberta."
+        />
       </ImgCard>
       <TitleAndText>
         <p>
@@ -153,7 +168,10 @@ export default function Debug() {
         </p>
       </TitleAndText>
       <ImgCard>
-        <img src="img/Debug/debug-actions.png" alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros." />
+        <img
+          src="img/Debug/debug-actions.png"
+          alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros."
+        />
       </ImgCard>
       <Table thWidth={100} tdWidth={250}>
         <table>

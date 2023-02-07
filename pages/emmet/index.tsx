@@ -39,10 +39,10 @@ export default function Emmet() {
       <TitleAndText>
         <p>
           A abreviatura Emmet e as expansões de snippet são ativadas por padrão
-          em
+          em{" "}
           <span className="code2 underline">
             html, haml, pug, slim, jsx, xml, xsl, css, scss,
-          </span>
+          </span>{" "}
           e arquivos <span className="code2 underline">sass</span>, bem como
           qualquer idioma que herde de qualquer um dos itens acima.
         </p>
@@ -50,11 +50,11 @@ export default function Emmet() {
       <TitleAndText>
         <h2>Emmet quando as sugestões rápidas estão desativadas</h2>
         <p>
-          Se você desativou a opção
+          Se você desativou a opção{" "}
           <span className="codeSnippet_2">editor.quickSuggestions</span> nas
           <span className="emphasis">configurações</span>, não verá as sugestões
           enquanto digita. Você ainda pode acionar as sugestões manualmente
-          pressionando
+          pressionando{" "}
           <span className="emphasis color_principal">Ctrl+Espaço</span>, assim
           exibindo as sugestões.
         </p>
@@ -76,14 +76,14 @@ export default function Emmet() {
         <h2>Usando snippets Emmet personalizados</h2>
         <p>
           Os snippets personalizados do Emmet precisam ser definidos em um
-          arquivo json chamado
+          arquivo json chamado{" "}
           <span className="code2 underline"> snippets.json</span>. Na
-          configuração
-          <span className="codeSnippet_2"> emmet.extensionsPath</span> deve
-          ter o caminho para o diretório desse arquivo.
+          configuração{" "}
+          <span className="codeSnippet_2"> emmet.extensionsPath</span> deve ter
+          o caminho para o diretório desse arquivo.
         </p>
         <p>
-          Abaixo está um exemplo para o conteúdo do arquivo
+          Abaixo está um exemplo para o conteúdo do arquivo{" "}
           <span className="code2 underline">snippets.json</span>.
         </p>
       </TitleAndText>
@@ -183,7 +183,7 @@ export default function Emmet() {
               <th>Nomes de trechos CSS</th>
               <td>
                 <TitleAndText>
-                  pode conter <span className="codeSnippet_2">:</span>
+                  pode conter <span className="codeSnippet_2 emphasis">:</span>
                 </TitleAndText>
               </td>
               <td>
@@ -199,7 +199,7 @@ export default function Emmet() {
               <th>Valores de fragmentos de CSS</th>
               <td>
                 <TitleAndText>
-                  pode terminar com <span className="codeSnippet_2">;</span>
+                  pode terminar com <span className="codeSnippet_2 emphasis">;</span>
                 </TitleAndText>
               </td>
               <td>
@@ -220,7 +220,7 @@ export default function Emmet() {
               <td>
                 <TitleAndText>
                   <span className="code2 underline">{"${cursor}"}</span> ou{" "}
-                  <span className="codeSnippet_2">`</span>
+                  <span className="codeSnippet_2 emphasis">`</span>
                 </TitleAndText>
               </td>
               <td>

@@ -64,7 +64,7 @@ export default function IntelliSense() {
           digitando{" "}
           <span className="emphasis color_principal">Ctrl+Espaço</span> ou
           digitando um caractere de acionamento (como o caractere de ponto ({" "}
-          <span className="codeSnippet_2">.</span> ) em JavaScript).
+          <span className="codeSnippet_2 emphasis">.</span> ) em JavaScript).
         </p>
       </TitleAndText>
       <ImgCard>

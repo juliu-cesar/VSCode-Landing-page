@@ -1,70 +1,68 @@
 import styled from "styled-components";
 
 export const StyledDivCrHome = styled.div`
+background-color: ${({ theme }) => theme.semi_black};
   position: relative;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-top: 20px;
   .ButtonsCrHome {
     width: 100%;
-    height: 90px;
+    height: 30px;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     display: flex;
     justify-content: space-around;
     button {
       position: relative;
       background-color: unset;
       color: ${({ theme }) => theme.text_color};
-      width: 80px;
-      height: 80px;
-      border: 2px solid ${({ theme }) => theme.third_color};
-      border-radius: 50%;
-      transition: all .5s;      
-      :hover{
-        box-shadow: 0 0 4px ${({ theme }) => theme.second_color};
-      }
+      padding: 5px;
+      border: unset;
       span{
-        content: "";
+        z-index: 10;
         position: absolute;
-        opacity: 0;
-        background-color: ${({ theme }) => theme.second_color};
-        width: 2px;
-        height: 27px;
-        top: 77px;
-        left: calc(50% - 1px);
-        transition: all .4s;
+        background-color: ${({ theme }) => theme.background_2};
+        width: 12px;
+        height: 12px;
+        top: 30px;
+        left: calc(50% - 6px);
+        border-radius: 50%;
+        transition: all .7s;
       }
     }
     .activeBtn{
-      border: 2px solid ${({ theme }) => theme.second_color};
       span{
-        opacity: 1;
+        background-color: ${({ theme }) => theme.second_color};
       }
+    }
+    ::after{
+      content: "";
+      position: absolute;
+      background-color: ${({ theme }) => theme.background_2};
+      width: 100vw;
+      height: 2px;
+      top: 55px;
+      left: 0px;
     }
   }
   .frame_carousel {
     position: relative;
     width: 100%;
-    height: 204px;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    border-color: ${({ theme }) => theme.second_color};
+    height: 200px;
     overflow: hidden;
     #CarouselHome{
       height: 100%;
-      padding-left: 20px;
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 10px;
-      transition: all .7s ease-in-out;
+      transition: all .7s cubic-bezier(0.7, 0.275, 0.565, 1);
       .card_carousel {
         background-color: ${({ theme }) => theme.background_2};
-        width: 302px;
-        height: 200px;
-        padding: 5px;
-        border-left: 2px solid;
-        border-right: 2px solid;
-        border-color: ${({ theme }) => theme.second_color};
+        width: 102%;
+        height: 190px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,7 +77,8 @@ export const StyledDivCrHome = styled.div`
             height: 100%;
           }
           #Debug{
-            height: 100%;
+            height: 127%;
+            object-position: center -25px;
           }
         }      
       }

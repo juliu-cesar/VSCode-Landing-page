@@ -45,7 +45,7 @@ export default function CarouselHome() {
         el.classList.remove("activeBtn");
       }
     });
-    carousel.style.transform = `translateX(${i * -300}px)`;
+    carousel.style.transform = `translateX(${i * -378}px)`;
   }
 
   function selectCard(target: HTMLElement): void {
