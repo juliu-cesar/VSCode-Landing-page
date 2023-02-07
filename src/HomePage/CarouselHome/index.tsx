@@ -71,18 +71,21 @@ export default function CarouselHome() {
           id="btn_Int"
           className="activeBtn"
           onClick={(e) => selectCard(e.target as HTMLElement)}
+          style={{backgroundColor: "unset"}}
         >
           IntelliSense<span id="Intellisense_border"></span>
         </button>
         <button
           id="btn_Sni"
           onClick={(e) => selectCard(e.target as HTMLElement)}
+          style={{backgroundColor: "unset"}}
         >
           Snippets<span id="Snippet_border"></span>
         </button>
         <button
           id="btn_Deb"
           onClick={(e) => selectCard(e.target as HTMLElement)}
+          style={{backgroundColor: "unset"}}
         >
           Debugging<span id="Debug_border"></span>
         </button>

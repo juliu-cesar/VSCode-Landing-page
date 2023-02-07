@@ -43,7 +43,7 @@ export default function Dropdown({showDropdown}: Prop) {
       <Link href="/intellisense">
         <div>Intellisense</div>
       </Link>
-      <Link href="">
+      <Link href="/marketplace">
         <div>Marketplace</div>
       </Link>
       <Link href="">

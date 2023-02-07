@@ -26,7 +26,7 @@ export default function Header({ isHomePage }: Props) {
             </Link>
           )}
           <span>
-            <button onClick={dropdown}>
+            <button onClick={dropdown} style={{backgroundColor: "unset"}}>
               <li className="resources_menu">
                 Funcionalidades
                 <img
