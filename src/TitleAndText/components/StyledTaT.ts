@@ -54,7 +54,4 @@ p{
 .underline{
   text-decoration: underline;
 }
-.indent{
-  margin-left: 5px;
-}
 `

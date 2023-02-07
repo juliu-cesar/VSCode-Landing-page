@@ -12,6 +12,8 @@ const theme = {
   background_base: "#333333",
   background_2: "#404040",
   gray: "#606060",
+  black: "#202020",
+  semi_black: "#282828",
   text_color: "#EFEFEF",
 
   code_1: "#2085c0",

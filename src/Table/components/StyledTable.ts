@@ -9,7 +9,7 @@ export const StyledTable = styled.div<{
   padding: 10px 16px;
   .frame_table {
     width: 100%;
-    border: 2px solid ${({ theme }) => theme.gray};
+    border: 2px solid ${({ theme }) => theme.background_2};
     border-radius: 2px;
     overflow-x: auto;
   }
@@ -27,7 +27,10 @@ export const StyledTable = styled.div<{
     }
     tbody {
       tr:nth-child(2n + 1) {
-        background-color: ${({ theme }) => theme.background_2};
+        background-color: ${({ theme }) => theme.black};
+      }
+      tr:nth-child(2n + 2) {
+        background-color: ${({ theme }) => theme.semi_black};
       }
       th,
       td {
@@ -44,8 +47,22 @@ export const StyledTable = styled.div<{
         width: ${(props) => `${props.tdWidth_2}px`};
       }
     }
-    .emphasis{
+    .emphasis {
       font-weight: 700;
+    }
+    .codeSnippet_1 {
+      background-color: ${({ theme }) => theme.bg_code_1};
+      color: ${({ theme }) => theme.code_1};
+      padding: 0 5px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    .codeSnippet_2 {
+      background-color: ${({ theme }) => theme.bg_code_2};
+      color: ${({ theme }) => theme.code_2};
+      padding: 0 5px;
+      border-radius: 3px;
+      font-size: 14px;
     }
   }
 `;
