@@ -17,7 +17,7 @@ const theme = {
   text_color: "#EFEFEF",
 
   code_1: "#2085c0",
-  bg_code_1: "#1F3951",
+  bg_code_1: "#0d3153",
   code_2: "#CB4545",
   bg_code_2: "#351E23",
 }

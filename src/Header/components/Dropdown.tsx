@@ -46,7 +46,7 @@ export default function Dropdown({showDropdown}: Prop) {
       <Link href="/marketplace">
         <div>Marketplace</div>
       </Link>
-      <Link href="">
+      <Link href="/snippet">
         <div>Snippets</div>
       </Link>
     </StyledDropdown>

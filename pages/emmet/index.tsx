@@ -51,7 +51,7 @@ export default function Emmet() {
         <h2>Emmet quando as sugestões rápidas estão desativadas</h2>
         <p>
           Se você desativou a opção
-          <span className="code2 underline">editor.quickSuggestions</span> nas
+          <span className="codeSnippet_2">editor.quickSuggestions</span> nas
           <span className="emphasis">configurações</span>, não verá as sugestões
           enquanto digita. Você ainda pode acionar as sugestões manualmente
           pressionando
@@ -79,7 +79,7 @@ export default function Emmet() {
           arquivo json chamado
           <span className="code2 underline"> snippets.json</span>. Na
           configuração
-          <span className="code2 underline"> emmet.extensionsPath</span> deve
+          <span className="codeSnippet_2"> emmet.extensionsPath</span> deve
           ter o caminho para o diretório desse arquivo.
         </p>
         <p>

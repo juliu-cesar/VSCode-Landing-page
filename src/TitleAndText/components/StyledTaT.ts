@@ -61,14 +61,14 @@ export const StyledTaT = styled.div`
     color: ${({ theme }) => theme.code_1};
     padding: 0 5px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .codeSnippet_2 {
     background-color: ${({ theme }) => theme.bg_code_2};
     color: ${({ theme }) => theme.code_2};
     padding: 0 5px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .small {
     font-size: 12px;
