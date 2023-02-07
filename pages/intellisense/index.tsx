@@ -3,6 +3,7 @@ import CodeCard from "@/src/CodeCard";
 import Footer from "@/src/Footer";
 import Header from "@/src/Header";
 import ImgCard from "@/src/ImgCard";
+import TableIcons from "@/src/Intellisense/TableIcons";
 import Table from "@/src/Table";
 import TitleAndText from "@/src/TitleAndText";
 
@@ -95,29 +96,7 @@ export default function IntelliSense() {
           textuais baseadas em palavras simples.
         </p>
       </TitleAndText>
-      <Table>
-        <table>
-          <thead>
-            <tr>
-              <th>Ícone</th>
-              <th>Nome</th>
-              <th>Tipo de símbolo</th>
-            </tr>
-            <tbody>
-              <tr>
-                <th><img src="" alt="" /></th>
-                <td>Métodos e funções</td>
-                <td>method, function, constructor</td>
-              </tr>
-              <tr>
-                <th><img src="" alt="" /></th>
-                <td>aaa</td>
-                <td>bbb</td>
-              </tr>              
-            </tbody>
-          </thead>
-        </table>
-      </Table>
+      <TableIcons />
 
       <Footer />
     </>

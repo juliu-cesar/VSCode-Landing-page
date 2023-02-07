@@ -50,7 +50,6 @@ p{
   padding: 0 5px;
   border-radius: 3px;
   font-size: 14px;
-  font-weight: 700;
 }
 .underline{
   text-decoration: underline;
