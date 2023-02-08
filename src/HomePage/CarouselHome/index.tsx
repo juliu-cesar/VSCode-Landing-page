@@ -63,7 +63,9 @@ export default function CarouselHome() {
     });
     setStartInterval(startInterval ? false : true);
   }
-
+  useEffect(() => {
+    clearPrevAndSelect(0)
+  }, []);
   return (
     <StyledDivCrHome>
       <div className="ButtonsCrHome">
