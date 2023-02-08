@@ -15,7 +15,7 @@ export default function Header({ isHomePage }: Props) {
   return (
     <StyledHeader>
       <nav>
-        <ul className="text_main">
+        <ul>
           {!isHomePage && (
             <Link href={"/"}>
               <img

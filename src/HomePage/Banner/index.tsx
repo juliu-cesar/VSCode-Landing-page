@@ -3,11 +3,15 @@ import { StyledMain } from "./components/StyledBanner";
 export default function Banner() {
   return (
     <StyledMain>
-      <h1>Visual Studio Code</h1>
-      <p>A simplicidade de um editor de código-fonte</p>
-      <p>assimilada com poderosas ferramentas</p>
-      <p>de desenvolvimento</p>
-      <div>
+      <div className="main_title">
+        <h1>Visual Studio Code</h1>
+        <div className="subtitle_banner">
+          <p>A simplicidade de um editor de código-fonte</p>
+          <p>assimilada com poderosas ferramentas</p>
+          <p>de desenvolvimento</p>
+        </div>
+      </div>
+      <div className="buttons_banner">
         <a
           className="btn_downloadPrincipal"
           href="https://code.visualstudio.com/download"
