@@ -14,7 +14,7 @@ export const StyledDivCrHome = styled.div`
     height: 30px;
     padding: 5px;
     margin: auto;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     button {

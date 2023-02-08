@@ -13,21 +13,6 @@ export const CSSReset = createGlobalStyle`
     font-family: 'Mukta', sans-serif;
     overflow-x: hidden;
   }
-  .subtitle{
-    font-size: 17px;
-  }
-  .text_main{
-    font-size: 15px;
-    font-weight: 400;
-  }
-  .text_general{
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .text_small{
-    font-size: 11px;
-    font-weight: 300;
-  }
   .icon{
     width: 20px;
     height: 20px;

@@ -9,7 +9,7 @@ const theme = {
   primary_color_2: "#00EB57",
   second_color_2: "#00B843",
 
-  background_base: "#333333",
+  background_base: "#303232",
   background_2: "#404040",
   gray: "#606060",
   black: "#202020",
