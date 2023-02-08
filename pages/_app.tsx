@@ -4,7 +4,7 @@ import { CSSReset } from "../styles/CSSReset";
 
 const theme = {
   primary_color: "#0098FF",
-  second_color: "#007ACC",
+  second_color: "#007acc",
   third_color: "#004D80",
   primary_color_2: "#00EB57",
   second_color_2: "#00B843",

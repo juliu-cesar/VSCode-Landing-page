@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const StyledDwSection = styled.div`
   width: 100%;
+  max-width: 880px;
   padding: 0 16px;
-  margin: 20px 0;
+  margin: auto;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -64,10 +66,66 @@ export const StyledDwSection = styled.div`
       margin: 5px 0;
       display: flex;
       align-items: center;
-      line-height: 12px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 14px;
     }
     img{
       margin-left: 7px;
     }
+  }
+  @media (max-width: 350px) {
+    .btn_DwSection{
+      height: 50px;
+    }
+    .btn_WebVSection{
+      height: 50px;
+    }
+    .DwDescription{
+      padding: 5px;
+      p{
+        font-size: 14px;
+      }
+    }
+    .WebDescription{
+      padding: 5px;
+      p{
+        font-size: 13px;
+        line-height: 14px;
+    }
+    } 
+  }
+  @media (min-width: 450px) {
+    .btn_DwSection{
+      height: 40px;
+    }
+    .btn_WebVSection{
+      height: 40px;
+    }
+    .WebDescription p{
+      font-size: 16px;
+      line-height: 16px;
+  }
+  }
+  @media (min-width: 900px) {
+    .btn_DwSection{
+      height: 50px;
+    }
+    .btn_WebVSection{
+      height: 50px;
+    }
+    .DwDescription{
+      padding: 16px;
+      p{
+        font-size: 17px;
+      }
+    }
+    .WebDescription{
+      padding: 16px;
+      p{
+        font-size: 16px;
+        line-height: 17px;
+    }
+    } 
   }
 `
