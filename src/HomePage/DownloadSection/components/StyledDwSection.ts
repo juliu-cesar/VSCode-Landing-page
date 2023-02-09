@@ -108,6 +108,10 @@ export const StyledDwSection = styled.div`
   }
   }
   @media (min-width: 900px) {
+    h3{
+      font-size: 20px;
+      padding: 15px;
+    }
     .btn_DwSection{
       height: 50px;
     }
