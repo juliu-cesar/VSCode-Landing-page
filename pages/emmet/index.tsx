@@ -51,7 +51,7 @@ export default function Emmet() {
         <h2>Emmet quando as sugestões rápidas estão desativadas</h2>
         <p>
           Se você desativou a opção{" "}
-          <span className="codeSnippet_2">editor.quickSuggestions</span> nas
+          <span className="codeSnippet_2">editor.quickSuggestions</span> nas{" "}
           <span className="emphasis">configurações</span>, não verá as sugestões
           enquanto digita. Você ainda pode acionar as sugestões manualmente
           pressionando{" "}
@@ -199,7 +199,8 @@ export default function Emmet() {
               <th>Valores de fragmentos de CSS</th>
               <td>
                 <TitleAndText>
-                  pode terminar com <span className="codeSnippet_2 emphasis">;</span>
+                  pode terminar com{" "}
+                  <span className="codeSnippet_2 emphasis">;</span>
                 </TitleAndText>
               </td>
               <td>

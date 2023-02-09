@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { StyledCrAbout } from "./components/StyledCrAbout";
 
@@ -110,14 +111,14 @@ export default function CarouselAbout() {
               <h3>Conclusão de código inteligente</h3>
               <p>
                 Codifique de forma mais inteligente com o{" "}
-                <a href="">IntelliSense</a> - conclusões para variáveis, métodos
+                <Link href="/intellisense">IntelliSense</Link> - conclusões para variáveis, métodos
                 e módulos importados.
               </p>
             </div>
             <div className="frame_text_crAbout">
               <h3>Depuração simplificada</h3>
               <p>
-                A depuração de impressão ficou no passado. <a href="">Depure</a>{" "}
+                A depuração de impressão ficou no passado. <Link href="/debug">Depure</Link>{" "}
                 no VS Code com suas ferramentas de terminal.
               </p>
             </div>
@@ -132,7 +133,7 @@ export default function CarouselAbout() {
               <h3>Navegação de código e refatoração</h3>
               <p>
                 Navegue pelo seu código-fonte rapidamente usando peek e{" "}
-                <a href="">navegue até a definição</a>.
+                <Link href="/code-navigation">navegue até a definição</Link>.
               </p>
             </div>
           </div>

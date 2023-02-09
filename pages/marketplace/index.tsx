@@ -51,8 +51,15 @@ export default function Marketplace() {
         <h2>Encontre e instale uma extensão</h2>
         <p>
           Por exemplo, vamos instalar a popular extensão{" "}
-          <span className="color_principal underline">TODO Highlight</span>.
-          Esta extensão destaca textos como 'TODO:' e 'FIXME:' em seu
+          <span className="color_principal underline">
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight"
+              target={"_blank"}
+            >
+              TODO Highlight
+            </a>
+          </span>
+          . Esta extensão destaca textos como 'TODO:' e 'FIXME:' em seu
           código-fonte para que você possa encontrar rapidamente as seções
           desfeitas.
         </p>
@@ -100,7 +107,12 @@ export default function Marketplace() {
           detalhes será exibido todas as extensões do Pacote que serão
           instaladas.{" "}
           <span className="color_principal underline">
-            Os pacotes de extensão
+            <a
+              href="https://marketplace.visualstudio.com/search?target=VSCode&category=Extension%20Packs&sortBy=Installs"
+              target={"_blank"}
+            >
+              Os pacotes de extensão
+            </a>
           </span>{" "}
           agrupam extensões separadas para que possam ser facilmente instaladas
           de uma só vez.

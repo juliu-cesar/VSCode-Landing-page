@@ -107,7 +107,7 @@ export default function IntelliSense() {
           inserir uma sugestão mostrara a próxima melhor sugestão.
         </p>
       </TitleAndText>
-      <ImgCard>
+      <ImgCard maxLength={400}>
         <img
           src="img/IntelliSense/intellisense-tab-completion.gif"
           alt="varias conclusões de tabulação que são alternadas precintando a tecla 'tab'"

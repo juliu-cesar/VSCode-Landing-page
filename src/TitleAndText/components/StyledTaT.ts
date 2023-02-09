@@ -82,6 +82,12 @@ export const StyledTaT = styled.div`
   .underline {
     text-decoration: underline;
   }
+  a{
+    color: ${({ theme }) => theme.primary_color};
+    :hover{
+      opacity: .8;
+    }
+  }
   #annotation {
     width: 100%;
     display: flex;

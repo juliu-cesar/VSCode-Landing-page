@@ -5,6 +5,7 @@ import Header from "@/src/Header";
 import ImgCard from "@/src/ImgCard";
 import Table from "@/src/Table";
 import TitleAndText from "@/src/TitleAndText";
+import Link from "next/link";
 
 export default function Debug() {
   return (
@@ -38,7 +39,7 @@ export default function Debug() {
           Para depurar outras linguagens em tempo de execução (incluindo PHP,
           Ruby, Go, C#, Python, C++ , PowerShell e muitos outros ), procure por
           extensões Debuggers no VS Code{" "}
-          <span className="color_principal emphasis">Marketplace</span> ou
+          <span className="color_principal Link"><Link href={"/marketplace"}>Marketplace</Link></span> ou
           selecione a opção Instalar depuradores adicionais no menu Executar na
           parte superior da janela.
         </p>
