@@ -17,7 +17,7 @@ export const StyledDwSection = styled.div`
     border-radius: 1px;
   }
   .btn_DwSection{
-    background-color: ${({theme})=> theme.primary_color};
+    background: linear-gradient(90deg, rgba(0,152,255,0.40662202380952384) 0%, rgba(0,152,255,1) 60%, rgba(0,152,255,1) 100%);
     color: ${({theme})=> theme.text_color};
     width: 100%;
     height: 36px;
@@ -25,8 +25,22 @@ export const StyledDwSection = styled.div`
     border: unset;
     border-radius: 2px;
     font-weight: 700;
+    transition: all .5s ease-in-out;
     :hover{
-      box-shadow: 0px 0px 5px ${({theme})=> theme.primary_color};
+      background-color: ${({theme})=> theme.primary_color};
+    }
+  }
+  .btn_WebVSection{
+    background-color: unset;
+    color: ${({theme})=> theme.text_color};
+    width: 100%;
+    height: 36px;
+    margin: 10px 0;
+    border: 2px solid ${({theme})=> theme.text_color};
+    border-radius: 2px;
+    :hover{
+      background-color: ${({theme})=> theme.text_color};
+      color: ${({theme})=> theme.background_base};      
     }
   }
   .DwDescription{
@@ -41,19 +55,6 @@ export const StyledDwSection = styled.div`
     }
     img{
       margin-right: 7px;
-    }
-  }
-  .btn_WebVSection{
-    background-color: unset;
-    color: ${({theme})=> theme.text_color};
-    width: 100%;
-    height: 36px;
-    margin: 10px 0;
-    border: 2px solid ${({theme})=> theme.text_color};
-    border-radius: 2px;
-    :hover{
-      background-color: ${({theme})=> theme.text_color};
-      color: ${({theme})=> theme.background_base};      
     }
   }
   .WebDescription{
@@ -98,9 +99,11 @@ export const StyledDwSection = styled.div`
   @media (min-width: 450px) {
     .btn_DwSection{
       height: 40px;
+      font-size: 17px;
     }
     .btn_WebVSection{
       height: 40px;
+      font-size: 15px;
     }
     .WebDescription p{
       font-size: 16px;
@@ -114,9 +117,11 @@ export const StyledDwSection = styled.div`
     }
     .btn_DwSection{
       height: 50px;
+      font-size: 19px;
     }
     .btn_WebVSection{
       height: 50px;
+      font-size: 17px;
     }
     .DwDescription{
       padding: 16px;
