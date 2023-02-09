@@ -26,7 +26,7 @@ export default function CarouselAbout() {
         elementIndex = 0;
       }
       clearPrevAndSelect(elementIndex);
-    }, 600000);
+    }, 6000);
 
     return () => {
       clearInterval(interval);

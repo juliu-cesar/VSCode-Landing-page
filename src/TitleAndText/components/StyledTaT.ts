@@ -1,23 +1,27 @@
 import styled from "styled-components";
 
 export const StyledTaT = styled.div`
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
   font-weight: 300;
   h1 {
-    width: 100%;
     padding: 10px 30px;
     font-size: 25px;
     line-height: 27px;
   }
   h2 {
     background-color: ${({ theme }) => theme.background_2};
+    width: 100%;
     font-size: 20px;
-    margin: 10px 16px;
+    margin: 10px 0;
     padding: 10px 16px;
     line-height: 23px;
   }
   p {
-    width: 100%;
-    padding: 0 30px;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
     margin-bottom: 5px;
     line-height: 17px;
     font-size: 14px;
@@ -49,11 +53,11 @@ export const StyledTaT = styled.div`
   .code2 {
     color: ${({ theme }) => theme.code_2};
   }
-  .comment{
+  .comment {
     color: ${({ theme }) => theme.primary_color_2};
   }
-  .code_number{
-    color: #00Ee9f;
+  .code_number {
+    color: #00ee9f;
     font-weight: 500;
   }
   .codeSnippet_1 {
@@ -79,16 +83,40 @@ export const StyledTaT = styled.div`
     text-decoration: underline;
   }
   #annotation {
+    width: 100%;
     display: flex;
-    justify-content: end;
-    padding: 5px 16px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 0;
     p {
       width: 80%;
       padding: 5px 10px;
-      font-size: 12px;
+      margin: unset;
+      font-size: 13px;
       font-weight: 300;
-      line-height: 13px;
+      line-height: 15px;
       border-left: 5px solid ${({ theme }) => theme.gray};
+    }
+  }
+  @media (min-width: 450px) {
+    h1 {
+      font-size: 27px;
+      line-height: 32px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 24px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 19px;
+    }
+    #annotation p {
+      font-size: 15px;
+      line-height: 17px;
     }
   }
 `;

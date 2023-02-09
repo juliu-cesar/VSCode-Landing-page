@@ -66,6 +66,7 @@ position: relative;
     nav ul {
       min-width: 280px;
       height: 100%;
+      padding-right: 10px;
       li {
         font-size: 0.9rem;
         padding: 5px;

@@ -10,6 +10,7 @@ export const StyledCrAbout = styled.div`
     max-width: 880px;
     padding: 10px;
     margin: auto;
+    border-radius: 2px;
   }
   .frame_crAbout {
     width: 100%;
@@ -26,6 +27,7 @@ export const StyledCrAbout = styled.div`
       max-height: 440px;
       object-fit: cover;
       overflow: hidden;
+      border-radius: 2px;
       img {
         width: 100%;
         height: 100%;

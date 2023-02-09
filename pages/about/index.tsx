@@ -1,5 +1,4 @@
 import CarouselAbout from "@/src/About/CarouselAbout";
-import Annotation from "@/src/Annotation";
 import Footer from "@/src/Footer";
 import Header from "@/src/Header";
 import ImgCard from "@/src/ImgCard";
@@ -54,9 +53,16 @@ export default function About() {
           alt="Gráfico Stack Overflow com as principais IDEs utilizados no ano de 2021"
         />
       </ImgCard>
-      <Annotation>
-        <p>Desde 2011 todos os anos o Stack Overflow faz uma pesquisa de desenvolvedores para saber as principais informações sobre essa área, como qual a IDE mais utilizada, quanta cafeína é consumida, qual o salario por linguagem de programação, entre outros. </p>
-      </Annotation>
+      <TitleAndText>
+        <div id="annotation">
+          <p>
+            Desde 2011 todos os anos o Stack Overflow faz uma pesquisa de
+            desenvolvedores para saber as principais informações sobre essa
+            área, como qual a IDE mais utilizada, quanta cafeína é consumida,
+            qual o salario por linguagem de programação, entre outros.{" "}
+          </p>
+        </div>
+      </TitleAndText>
       <Footer />
     </>
   );
