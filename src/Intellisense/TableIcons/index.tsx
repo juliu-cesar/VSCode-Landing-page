@@ -3,7 +3,7 @@ import TitleAndText from "@/src/TitleAndText";
 
 export default function TableIcons() {
   return ( 
-    <Table thWidth={55} tdWidth={150} tdWidth_2={200} >
+    <Table thMinMiWidth={55} tdMinWidth={150} td2MinWidth={200} >
         <table>
           <thead>
             <tr>

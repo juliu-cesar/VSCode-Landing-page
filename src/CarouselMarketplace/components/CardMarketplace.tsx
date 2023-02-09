@@ -15,24 +15,24 @@ export default function CardMarketplace({
 }: Props) {
   return (
     <StyledCard>
-      <div className="card_crMarket">
-        <div className="frame_img">
-          <img
-            src={`img/Carousel_marketplace/${src}.png`}
-            alt="Ícone da extensão"
-          />
-        </div>
-        <div className="text_area">
+      <div className="frame_img">
+        <img
+          src={`img/Carousel_marketplace/${src}.png`}
+          alt="Ícone da extensão"
+        />
+      </div>
+      <div className="text_area">
+        <div>
           <h4>{title}</h4>
           <p>{identifier}</p>
-          <p className="download_numbers">
-            <img
-              src="img/Carousel_marketplace/download-icon.svg"
-              alt="ícone de download"
-              />
-              {downloads}M
-          </p>
         </div>
+        <p className="download_numbers">
+          <img
+            src="img/Carousel_marketplace/download-icon.svg"
+            alt="ícone de download"
+          />
+          {downloads}M
+        </p>
       </div>
     </StyledCard>
   );

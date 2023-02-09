@@ -1,14 +1,23 @@
 import { StyledTable } from "./components/StyledTable";
 
 interface Props {
-  children: React.ReactNode,
-  thWidth: number,
-  tdWidth: number,
-  tdWidth_2?: number
+  children: React.ReactNode;
+  thMinMiWidth: number;
+  tdMinWidth: number;
+  td2MinWidth?: number;
 }
-export default function Table({ children, thWidth, tdWidth, tdWidth_2 }: Props) {
+export default function Table({
+  children,
+  thMinMiWidth,
+  tdMinWidth,
+  td2MinWidth,
+}: Props) {
   return (
-    <StyledTable thWidth={thWidth} tdWidth={tdWidth} tdWidth_2={tdWidth_2}>
+    <StyledTable
+      thMinMiWidth={thMinMiWidth}
+      tdMinWidth={tdMinWidth}
+      td2MinWidth={td2MinWidth}
+    >
       <div className="frame_table">{children}</div>
     </StyledTable>
   );

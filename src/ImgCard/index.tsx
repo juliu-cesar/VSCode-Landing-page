@@ -2,11 +2,12 @@ import { StyledImgCard } from "./components/StyledImgCard";
 
 interface Props {
   children: React.ReactNode
+  maxLength?: number
 }
 
-export default function ImgCard({ children }: Props) {
+export default function ImgCard({ children, maxLength }: Props) {
   return (
-    <StyledImgCard>
+    <StyledImgCard maxLength={maxLength}>
       {children}
     </StyledImgCard>
   );

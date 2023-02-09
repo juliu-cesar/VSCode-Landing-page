@@ -29,7 +29,7 @@ export default function CodeNavigation() {
           <span className="color_principal emphasis">F12</span>.
         </p>
         <p>
-          Se você pressionar Ctrl e passar o mouse sobre um símbolo, uma
+          Se você pressionar <span className="emphasis">Ctrl</span> e passar o mouse sobre um símbolo, uma
           visualização da declaração aparecerá:
         </p>
       </TitleAndText>

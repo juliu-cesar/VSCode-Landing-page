@@ -77,7 +77,7 @@ export default function CarouselMarketplace() {
             downloads={75.3}
           />
           <CardMarketplace
-            src="c-plus-plus-icon"
+            src="c-icon"
             title="C/C++"
             identifier="ms-vscode"
             downloads={41.9}
@@ -105,6 +105,36 @@ export default function CarouselMarketplace() {
             title="PHP Debug"
             identifier="xdebug.php"
             downloads={8.4}
+          />
+          <CardMarketplace
+            src="Live-Server-icon"
+            title="Live Server"
+            identifier="ritwickdey"
+            downloads={30.7}
+          />
+          <CardMarketplace
+            src="prettier-icon"
+            title="Prettier"
+            identifier="esbenp"
+            downloads={28.9}
+          />
+          <CardMarketplace
+            src="IntelliCode-icon"
+            title="IntelliCode"
+            identifier="VisualStudioExptTeam"
+            downloads={26.2}
+          />
+          <CardMarketplace
+            src="ESLint-icon"
+            title="ESLint"
+            identifier="dbaeumer"
+            downloads={24.9}
+          />
+          <CardMarketplace
+            src="docker-icon"
+            title="Docker"
+            identifier="ms-azuretools"
+            downloads={21.2}
           />
         </div>
       </div>

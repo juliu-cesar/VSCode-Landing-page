@@ -167,13 +167,13 @@ export default function Debug() {
           de Depuração aparecerá na parte superior do editor.
         </p>
       </TitleAndText>
-      <ImgCard>
+      <ImgCard maxLength={400}>
         <img
           src="img/Debug/debug-actions.png"
           alt="Botões de ação da depuração, como 'proxima linha de código', 'entrar na função', entre outros."
         />
       </ImgCard>
-      <Table thWidth={100} tdWidth={250}>
+      <Table thMinMiWidth={100} tdMinWidth={250}>
         <table>
           <thead>
             <tr>

@@ -64,15 +64,15 @@ export const StyledTaT = styled.div`
     background-color: ${({ theme }) => theme.bg_code_1};
     color: ${({ theme }) => theme.code_1};
     padding: 0 5px;
-    border-radius: 3px;
     font-size: 13px;
+    border-radius: 3px;
   }
   .codeSnippet_2 {
     background-color: ${({ theme }) => theme.bg_code_2};
     color: ${({ theme }) => theme.code_2};
     padding: 0 5px;
-    border-radius: 3px;
     font-size: 13px;
+    border-radius: 3px;
   }
   .small {
     font-size: 12px;
@@ -113,6 +113,16 @@ export const StyledTaT = styled.div`
     p {
       font-size: 17px;
       line-height: 19px;
+    }
+    .list {
+      font-size: 15px;
+      line-height: 19px;
+    }
+    .codeSnippet_1 {
+      font-size: 14px;
+    }
+    .codeSnippet_2 {
+      font-size: 14px;
     }
     #annotation p {
       font-size: 15px;

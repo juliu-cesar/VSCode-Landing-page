@@ -150,7 +150,7 @@ export default function Emmet() {
           maneira antiga de fazer o mesmo de algumas maneiras:
         </p>
       </TitleAndText>
-      <Table thWidth={100} tdWidth={150} tdWidth_2={300}>
+      <Table thMinMiWidth={100} tdMinWidth={150} td2MinWidth={300}>
         <table>
           <thead>
             <tr>
