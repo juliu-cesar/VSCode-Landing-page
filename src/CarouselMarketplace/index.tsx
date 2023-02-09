@@ -71,70 +71,81 @@ export default function CarouselMarketplace() {
       <div className="frame_crMarket">
         <div id="carouselMarket">
           <CardMarketplace
-            src="python-icon"
             title="Python"
-            identifier="ms-python"
             downloads={75.3}
+            identifier="ms-python"
+            src="python-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=ms-python.python"
           />
           <CardMarketplace
-            src="c-icon"
             title="C/C++"
-            identifier="ms-vscode"
             downloads={41.9}
-          />
-          <CardMarketplace
-            src="C-sharp-icon"
-            title="C#"
-            identifier="ms-dotnettools"
-            downloads={19.7}
-          />
-          <CardMarketplace
-            src="debugger-java-icon"
-            title="Debugger for Java"
             identifier="ms-vscode"
+            src="c-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools"
+          />
+          <CardMarketplace
+            title="C#"
+            downloads={19.7}
+            identifier="ms-dotnettools"
+            src="C-sharp-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp"
+          />
+          <CardMarketplace
+            title="Debugger for Java"
             downloads={17.2}
+            identifier="ms-vscode"
+            src="debugger-java-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug"
           />
           <CardMarketplace
-            src="Go-icon"
             title="Go"
-            identifier="golang.Go"
             downloads={8.7}
+            identifier="golang.Go"
+            src="Go-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=golang.Go"
           />
           <CardMarketplace
-            src="php-icon"
             title="PHP Debug"
-            identifier="xdebug.php"
             downloads={8.4}
+            identifier="xdebug.php"
+            src="php-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug"
           />
           <CardMarketplace
-            src="Live-Server-icon"
             title="Live Server"
-            identifier="ritwickdey"
             downloads={30.7}
+            identifier="ritwickdey"
+            src="Live-Server-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
           />
           <CardMarketplace
-            src="prettier-icon"
             title="Prettier"
-            identifier="esbenp"
             downloads={28.9}
+            identifier="esbenp"
+            src="prettier-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
           />
           <CardMarketplace
-            src="IntelliCode-icon"
             title="IntelliCode"
-            identifier="VisualStudioExptTeam"
             downloads={26.2}
+            identifier="VisualStudioExptTeam"
+            src="IntelliCode-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode"
           />
           <CardMarketplace
-            src="ESLint-icon"
             title="ESLint"
-            identifier="dbaeumer"
             downloads={24.9}
+            identifier="dbaeumer"
+            src="ESLint-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint"
           />
           <CardMarketplace
-            src="docker-icon"
             title="Docker"
-            identifier="ms-azuretools"
             downloads={21.2}
+            identifier="ms-azuretools"
+            src="docker-icon"
+            link="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker"
           />
         </div>
       </div>

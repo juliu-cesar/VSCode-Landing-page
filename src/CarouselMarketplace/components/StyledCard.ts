@@ -30,7 +30,8 @@ export const StyledCard = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    div {
+    a {
+      color: ${({ theme }) => theme.primary_color};
       max-width: 60%;
       overflow: hidden;
       h4 {
@@ -41,6 +42,9 @@ export const StyledCard = styled.div`
         font-size: 11px;
         font-weight: 300;
         line-height: 13px;
+      }
+      :hover{
+        opacity: .7;
       }
     }
     .download_numbers {
