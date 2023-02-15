@@ -73,7 +73,6 @@ export const StyledDivCrHome = styled.div`
       align-items: center;
       gap: 10px;
       transition: all 0.7s cubic-bezier(0.7, 0.275, 0.565, 1);
-      transform: translateX(-920px);
       .card_carousel {
         width: 101vw;
         height: 100%;
