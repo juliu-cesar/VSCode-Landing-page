@@ -28,7 +28,7 @@ Todos os estilos e disposição das paginas foram desenvolvidos no Figma no conc
 
 O **React** dispensa apresentações, uma das bibliotecas mais utilizadas para desenvolvimento web, sendo alguns dos motivos, o virtual DOM, evitando a renderização de toda a pagina a cada pequena atualização, o componentes reutilizáveis e encapsulados, a performance da aplicação, entre outros.
 
-Que o **TypeScript** possui inúmeros benefícios, isso já é conhecido, porem para este projeto, como as paginas possuem pouco conteúdo passando entre componentes, essas vantagens não foram o foco. Claro que ainda assim vale muito apena.
+Que o **TypeScript** possui inúmeros benefícios, isso já é conhecido, porem para este projeto, como as paginas possuem pouco conteúdo passando entre componentes, essas vantagens não foram o foco. Porem ainda assim vale a pena.
 
 
 <img src="https://user-images.githubusercontent.com/121033909/218168778-d2d3398e-c95e-40af-b8ed-af150cb9bc16.png" height="100" align="right" />
