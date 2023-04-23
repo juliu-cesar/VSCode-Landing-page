@@ -14,7 +14,7 @@ O intuito do projeto é de *vender* a ferramenta Visual Studio Code, apresentand
 
 <img src="https://user-images.githubusercontent.com/121033909/218165711-ae671012-7b07-44bf-b453-ae777dee69b4.png" height="250" align="right" />
 
-Todos os estilos e disposição das paginas foram desenvolvidos no Figma no conceito de Mobile First, buscando uma pagina amigável ao usuário porem que ainda transmitisse o *ar* de uma patagina de documentação. Ao lado temos um exemplo da pagina Sobre. O projeto conta atualmente com 8 paginas além da pagina principal.
+Todos os estilos e disposição das paginas foram desenvolvidos no Figma no conceito de Mobile First, buscando uma pagina amigável ao usuário porem que ainda transmitisse o *ar* de uma pagina de documentação. Ao lado temos um exemplo da pagina Sobre. O projeto conta atualmente com 8 paginas além da pagina principal.
 
 ## Tecnologias utilizadas
 
